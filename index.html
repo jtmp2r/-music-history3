@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <ul>
+	  <li><a href="#" id="link-home">Home</a></li> |
+	  <li><a href="#" id="link-list">List</a></li> |
+	  <li><a href="/add" id="link-add">Add</a></li>
+  </ul>
+
+  <fieldset id="home-view">
+  	<div>Song Length</div>    
+    <br />
+
+    <label>Artist:</label>
+    <br />
+	  <select placeholder="Options">
+		  <option>Music</option>
+		  <option>Music2</option>
+		  <option>Music3</option>
+		  <option>Music4</option>
+	  </select>
+
+	  <br />
+
+    <label>Album:</label>
+    <br />
+    <select placeholder="Options">
+		  <option>Music</option>
+		  <option>Music2</option>
+		  <option>Music3</option>
+		  <option>Music4</option>
+	  </select>
+	  <br />
+
+	  <label>Genre</label>
+	  <br />
+    <input type="checkbox" name="hip-hop" value="hip-hop">Hip Hop
+    <input type="checkbox" name="r&b" value="r&b">Rhythm & Blues
+    <input type="checkbox" name="jazz" value="jazz">Jazz
+  </fieldset>
+
+  <fieldset id="list-view">
+    <h2>Song Name</h2><br />
+    <div>Artist | Album Name | Genre</div>
+
+    <h2>Song Name</h2>
+    <div>Artist | Album Name | Genre</div>
+
+    <h2>Song Name</h2>
+    <div>Artist | Album Name | Genre</div>
+  	
+  </fieldset>
+
+  <script type="text/javascript" src="javascript/xhr.js"></script>
+  <script type="text/javascript" src="javascript/home.js"></script>
+  <script type="text/javascript" src="javascript/list.js"></script>
+  <script type="text/javascript" src="javascript/add.js"></script>
+</body>
+</html>

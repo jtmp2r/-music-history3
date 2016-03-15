@@ -1,0 +1,28 @@
+#home-view {
+	width: 185px;
+	height: 400px;
+	display: inline-block;
+	line-height: 150%
+}
+
+#list-view {
+	width: 1000px;
+	height: 400px;	
+	float: right;
+	float: top;
+	display: inline-block;
+}
+
+#addSong {
+	display: block;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	right: 100px;
+	margin: auto;
+	line-height: 200%;	
+}
+
+li {
+	display: inline;
+}
