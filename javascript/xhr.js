@@ -11,6 +11,7 @@ var Songs = (function() {
 			newMusic.addEventListener("load", function() {
 				songData = JSON.parse(this.responseText);
 				console.log("Que?", songData)
+				Songs.myInfo(songData);
 			});
 
 			newMusic.open("GET", "songs.json");
@@ -20,7 +21,9 @@ var Songs = (function() {
 
 }())
 
-
-
 Songs.myData();
+
+
+
+
 

@@ -2,7 +2,8 @@
 	width: 185px;
 	height: 400px;
 	display: inline-block;
-	line-height: 150%
+	line-height: 150%;
+	background-color: lightblue;
 }
 
 #list-view {
@@ -11,6 +12,7 @@
 	float: right;
 	float: top;
 	display: inline-block;
+	background-color: pink;
 }
 
 #addSong {
