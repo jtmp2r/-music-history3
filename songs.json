@@ -1,20 +1,21 @@
+
+
 {
-	"songs": [
-    
+  "songs": [
     {
-    	"title": "Bohemian Rhapsody",
-    	"artist": "Queen",
-    	"album": "Queen album"
+      "title":"Gimme All Your Lovin",
+      "album": "Eliminator",
+      "artist": "ZZ Top"
     },
     {
-    	"title": "Swimming Pools",
-    	"artist": "Kendrick Lamarr",
-    	"album": "M.A.A.D City"
+      "title":"Welcome To The Jungle",
+      "album": "Appetite For Destruction",
+      "artist": "Guns & Roses"
     },
     {
-    	"title": "Mad World",
-    	"artist": "Tears for Fears",
-    	"album": "80's Music"
+      "title":"Jesus is a Friend of Mine",
+      "album": "First Fruit",
+      "artist": "Sonseed"
     }
   ]
 }
