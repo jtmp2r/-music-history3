@@ -1,6 +1,22 @@
-var Songs = (function(oldSongs) {   
+$(document).ready(function() {
 
-	oldSongs.myInfo = function(songView) {
+	$.ajax({
+			url: "songs.json"
+		}).done(function(data) {
+	    console.log("ajax", data);
+	    loadSongs(data);
+		});
+		
+	$("#showMe").click(function() {	
+		$.ajax({
+			url: "more.json"
+		}).done(function(data) {
+			console.log("ajax", data);
+			loadSongs(data);
+		})
+  })
+
+	function loadSongs(songView) {
 	  for (var i = 0; i < songView.songs.length; i++) {
       var songData = songView.songs;
 	  	$("#list-view").append("<h2>" + songData[i].artist + "</h2>");
@@ -16,10 +32,5 @@ var Songs = (function(oldSongs) {
 	});
 	
 
-
-	
-
-  return oldSongs;
-
-}(Songs))
+})
 
