@@ -1,32 +1,22 @@
-var Songs = (function(oldSongs) { 
-  var initialSong = document.getElementById("list-view");
-  var newSongs = document.getElementById("more-view")
-  var showMe = document.getElementById("showMe")
-  
+var Songs = (function(oldSongs) {   
 
 	oldSongs.myInfo = function(songView) {
-    console.log("trick", songView)
-    var songData = songView.songs;
-	  displaySongs = "";
-	  for (var i = 0; i < songData.length; i++) {
-	  	displaySongs += "<h3>" + songData[i].artist + "<button id='delete'>x</button>" + "</h3> <br />" + "<div>" + songData[i].title + "</div>"
+	  for (var i = 0; i < songView.songs.length; i++) {
+      var songData = songView.songs;
+	  	$("#list-view").append("<h2>" + songData[i].artist + "</h2>");
+	  	$("#list-view").append("<h3>" + songData[i].album + "</h3>");
+	  	$("#list-view").append("<div>" + songData[i].title + "</div>");
+	  	$("#list-view").append("<button id='delete'>Delete</button>");
+
 	  };
-	  initialSong.innerHTML = displaySongs;
-	  newSongs.innerHTML = displaySongs;
 	}
 
-	var removeItem = document.getElementById("list-view");
-	removeItem.addEventListener("click", remove);
-	function remove(e) {
-		this.removeChild(e.target.parentNode);
-	}
+	$("#delete").click(function() {
+		$("list-view").remove();
+	});
 	
-	newSongs.style.visibility = "hidden";
 
-  showMe.addEventListener("click", function() {
-  	newSongs.style.visibility = "visible";
-  })
-	
+
 	
 
   return oldSongs;

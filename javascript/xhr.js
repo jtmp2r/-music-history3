@@ -1,6 +1,12 @@
 var Songs = (function() {
 	var songData = [];
-
+	
+$.ajax({
+		url: "songs.json"
+	}).done(function(data) {
+    console.log("ajax", data);
+    wantJqueryToExecute(data);
+	});
 
   return {
 
