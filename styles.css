@@ -1,5 +1,4 @@
 #home-view {
-	width: 185px;
 	height: 400px;
 	display: inline-block;
 	line-height: 150%;
@@ -7,7 +6,6 @@
 }
 
 #view {
-	width: 1000px;
 	height: 400px;	
 	float: right;
 	float: top;
@@ -27,4 +25,9 @@
 
 li {
 	display: inline;
+}
+
+.hide {
+	display: none;
+	visibility: hidden;
 }

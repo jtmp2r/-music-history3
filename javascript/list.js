@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 	$.ajax({
 			url: "songs.json"
 		}).done(function(data) {
@@ -30,7 +31,26 @@ $(document).ready(function() {
 	$("#delete").click(function() {
 		$("list-view").remove();
 	});
-	
+
+	$("button").click(function() {
+		$("#showMe").append($("#addMe").val());
+		loadSongs()
+	});
+
+
+  
+
+  function linkList() {
+  	$("#musicForm").addClass("hide");
+  	if ($("#link-add").click()) {
+			$("#musicForm").removeClass("hide");
+			$("#main").addClass("hide");
+		}else if($("#link-home").click()) {
+			$("#main").removeClass("hide");
+			$("#musicForm").addClass("hide");
+		}
+  }
+	linkList("");
 
 })
 

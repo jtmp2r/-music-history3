@@ -1,78 +1,81 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <ul>
-  	  <li><a href="#" id="link-home">Home</a></li> |
-  	  <li><a href="#" id="link-list">List</a></li> |
-  	  <li><a href="/add" id="link-add">Add</a></li>
-    </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <ul>
+      	  <li><a href="#" id="link-home">Home</a></li> |
+      	  <li><a href="#" id="link-add">Add</a></li>
+        </ul>
 
-    <fieldset id="home-view">
-    	<div>Song Length</div>    
-      <br />
+        <div id="main">
+          <fieldset class="col-xs-2" id="home-view">
+          	<div>Song Length</div>    
+            <br />
 
-      <label>Artist:</label>
-      <br />
-  	  <select placeholder="Options">
-  		  <option>Music</option>
-  		  <option>Music2</option>
-  		  <option>Music3</option>
-  		  <option>Music4</option>
-  	  </select>
+            <label>Artist:</label>
+            <br />
+        	  <select placeholder="Options">
+        		  <option>Music</option>
+        		  <option>Music2</option>
+        		  <option>Music3</option>
+        		  <option>Music4</option>
+        	  </select>
 
-  	  <br />
+        	  <br />
 
-      <label>Album:</label>
-      <br />
-      <select placeholder="Options">
-  		  <option>Music</option>
-  		  <option>Music2</option>
-  		  <option>Music3</option>
-  		  <option>Music4</option>
-  	  </select>
-  	  <br />
+            <label>Album:</label>
+            <br />
+            <select placeholder="Options">
+        		  <option>Music</option>
+        		  <option>Music2</option>
+        		  <option>Music3</option>
+        		  <option>Music4</option>
+        	  </select>
+        	  <br />
 
-  	  <label>Genre</label>
-  	  <br />
-      <input type="checkbox" name="hip-hop" value="hip-hop">Hip Hop
-      <input type="checkbox" name="r&b" value="r&b">Rhythm & Blues
-      <input type="checkbox" name="jazz" value="jazz">Jazz
-    </fieldset>
+        	  <label>Genre</label>
+        	  <br />
+            <input type="checkbox" name="hip-hop" value="hip-hop">Hip Hop
+            <input type="checkbox" name="r&b" value="r&b">Rhythm & Blues
+            <input type="checkbox" name="jazz" value="jazz">Jazz
+          </fieldset>
 
-    <fieldset id="view">
-      <div id="list-view"></div>
-      <button id="showMe">More ></button>
+          <fieldset class="col-xs-10" id="view">
+            <div id="list-view"></div>
+            <button id="showMe">More ></button>
 
-      <div id="more-view"></div>
-    </fieldset>
-    	
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="javascript/xhr.js"></script>
-    <script type="text/javascript" src="javascript/home.js"></script>
-    <script type="text/javascript" src="javascript/list.js"></script>
-  </body>
+            <div id="more-view"></div>
+          </fieldset>
+        </div>  
+      </div>
+    </div>
+
+    <div id="musicForm">
+      <fieldset id="addSong">
+        <label>Song Name:</label>
+        <input type="text"></input>
+        <br />
+
+        <label>Artist:</label>
+        <input type="text" id="addMe"></input>
+        <br />
+
+        <label>Album:</label>
+        <input type="text"></input>
+        <br />
+
+        <button>Add</button>
+      </fieldset>
+    </div>
+        	
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="javascript/list.js"></script>
+        <script type="text/javascript" src="javascript/home.js"></script>
+      </body>  
 </html>
 
-
-<!-- <!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
-
-  <div id="list-of-songs"></div>
-  <button id="get-more-songs">GET MORE SONGS</button>
-
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="main2.js"></script>
-
-</body>
-</html> -->
