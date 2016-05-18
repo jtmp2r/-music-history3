@@ -1,0 +1,19 @@
+{
+  "songs": {
+    "song4": {
+    	"title": "Walking in the Rain",
+    	"artist": "Juice",
+    	"album": "80's"
+    },
+    "song5": {
+    	"title": "King Kunta",
+    	"artist": "Kendrick Lamarr",
+    	"album": "To Pimp a Butterfly"
+    },
+    "song6": {
+    	"title": "Oh, Freedom",
+    	"artist": "Choir",
+    	"album": "Old Negro Spiritual"
+    }
+  }
+}

@@ -8,14 +8,12 @@
     <div class="container-fluid">
       <div class="row">
         <ul class="navbar navbar-default">
-      	  <li class="navbar-brand"><a href="#" id="link-home">Home</a></li> |
+      	  <li class="navbar-brand"><a href="#" id="link-home">Home</a></li>
       	  <li class="navbar-brand"><a href="#" id="link-add">Add</a></li>
         </ul>
 
         <div id="main">
-          <fieldset class="col-xs-2 container" id="home-view">
-          	<div>Song Length</div>    
-            <br />
+          <section class="col-xs-2" id="home-view">
 
             <label>Artist:</label>
             <br />
@@ -30,7 +28,7 @@
 
             <label>Album:</label>
             <br />
-            <select placeholder="Options">
+            <select>
         		  <option>Music</option>
         		  <option>Music2</option>
         		  <option>Music3</option>
@@ -43,20 +41,17 @@
             <input type="checkbox" name="hip-hop" value="hip-hop">Hip Hop
             <input type="checkbox" name="r&b" value="r&b">Rhythm & Blues
             <input type="checkbox" name="jazz" value="jazz">Jazz
-          </fieldset>
+          </section>
 
           <fieldset class="col-xs-10 container-fluid" id="view">
             <div id="list-view"></div>
-<!--             <button id="showMe">More ></button>
- -->
-            <div id="more-view"></div>
-          </fieldset>
+          </fieldset> 
         </div>  
       </div>
     </div>
 
     <div id="musicForm" class="hide">
-      <fieldset id="addSong">
+      <section id="addSong">
         <label>Song Name:</label>
         <input type="text" id="userTitle"></input>
         <br />
@@ -70,7 +65,7 @@
         <br />
 
         <button class="btn btn-danger" id="ohYeah">Add</button>
-      </fieldset>
+      </section>
     </div>
         	
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>

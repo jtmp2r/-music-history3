@@ -1,8 +1,10 @@
 #home-view {
+	border-style: 2px;
 	height: 400px;
 	display: inline-block;
 	line-height: 150%;
 	background-color: lightblue;
+	border-width: thick;
 }
 
 #view {
